@@ -1,6 +1,6 @@
 name       : python-polib
 version    : 1.0.7
-release    : 1
+release    : 2
 source     :
     - https://pypi.python.org/packages/source/p/polib/polib-1.0.7.tar.gz : 43ce60d05ffa442ba9d3c5722193aadb93c38174b9fb471c8ea7ccbf8349bbca
 license    : MIT
@@ -9,7 +9,7 @@ description: |
     polib is a library to manipulate, create, modify gettext files (pot, po and mo files). You can load existing files, iterate through it’s entries, add, modify entries, comments or metadata, etc… or create new po files from scratch.
 builddeps  :
     - pkgconfig(python-2.7)
-    - pkgconfig(python-3.4)
+    - pkgconfig(python-3.5)
 build      : |
     for py in "python" "python3" ; do
         ${py} setup.py build
